@@ -130,7 +130,7 @@ export default function Home() {
 				</div>
 				<div className="home_slide_content4" id="partner">
 					<h2 className="home_slide_title mt-5">Trang web đã được kết nối đến</h2>
-					<div className="grid grid-cols-6 home_slide_tv">
+					{/* <div className="grid grid-cols-6 home_slide_tv">
 						<a href="https://vnexpress.net/vexere-ho-tro-5-000-ve-tet-2021-cho-sinh-vien-4211920.html" target="_blank" rel="noreferrer">
 							<img className=" lazyloaded" data-src="https://storage.googleapis.com/fe-production/images/logo-baochi/logo-vne.png" src="https://storage.googleapis.com/fe-production/images/logo-baochi/logo-vne.png" alt="express" />
 						</a>
@@ -149,7 +149,7 @@ export default function Home() {
 						<a href="https://www.youtube.com/watch?v=qT30wzsFKGw" target="_blank" rel="noreferrer">
 							<img className=" lazyloaded" data-src="https://storage.googleapis.com/fe-production/images/logo-baochi/logo-fbnc.png" src="https://storage.googleapis.com/fe-production/images/logo-baochi/logo-fbnc.png" alt="fbnc" />
 						</a>
-					</div>
+					</div> */}
 				</div>
 				<div className="home_slide_content5" id="station">
 					<h2 className="home_slide_title mt-5">Bến xe nổi bật</h2>

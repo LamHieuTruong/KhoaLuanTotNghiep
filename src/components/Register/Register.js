@@ -3,9 +3,35 @@ import {Form, Input, Button, Checkbox, Popconfirm} from "antd";
 import {useFormik} from "formik";
 import * as Yup from "yup";
 import {useDispatch, useSelector} from "react-redux";
+// import nodemailer from "nodemailer";
 
 import {registerAction} from "../../redux/actions/UserAction";
 import {CLOSE_NOFICATION, NOFICATION} from "../../redux/types/userTypes";
+// async function sendVerificationEmail(receiverEmail, verificationCode) {
+//     let transporter = nodemailer.createTransport({
+//         service: 'gmail',
+//         auth: {
+//             user: 'your_email@gmail.com', // Địa chỉ email của bạn
+//             pass: 'your_password' // Mật khẩu của bạn
+//         }
+//     });
+
+//     let mailOptions = {
+//         from: 'your_email@gmail.com',
+//         to: receiverEmail,
+//         subject: 'Xác thực tài khoản',
+//         text: `Mã xác thực của bạn là: ${verificationCode}`
+//     };
+
+//     try {
+//         let info = await transporter.sendMail(mailOptions);
+//         console.log('Email sent: ' + info.response);
+//         return true; // Trả về true nếu gửi email thành công
+//     } catch (error) {
+//         console.log('Error sending email:', error);
+//         return false; // Trả về false nếu gửi email thất bại
+//     }
+// }
 export default function Register(props) {
 	const dispatch = useDispatch();
 	const SignupSchema = Yup.object().shape({
@@ -17,6 +43,7 @@ export default function Register(props) {
 			.matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/, "Số điện thoại không hợp lệ"),
 		confirmPassword: Yup.string().oneOf([Yup.ref("passWord"), null], "Mật khẩu không trùng"),
 	});
+	
 	const formik = useFormik({
 		initialValues: {
 			name: "",
@@ -36,7 +63,9 @@ export default function Register(props) {
 			};
 			dispatch(registerAction(user));
 		},
+		
 	});
+	
 
 	return (
 		<>

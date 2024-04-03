@@ -82,52 +82,52 @@ export default function Details(props) {
 	};
 
 	const data = [
-		{
-			title: (
-				<div className="img-name flex items-center">
-					<img src="https://static.vexere.com/production/utilities/1610093076560.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
-					<div className="name">An toàn mùa covid</div>
-				</div>
-			),
-			description: (
-				<div className="description">
-					Là chương trình bảo vệ an toàn cho hành khách sử dụng dịch vụ của VeXeRe trong mùa dịch Covid. VeXeRe đồng hành các nhà xe đối tác triển khai biện pháp bảo vệ an toàn cho hành khách, như sau: (1) Kiểm tra thân nhiệt hành khách trước khi lên xe
-					<br />
-					(2) Trang bị nước rửa tay;
-					<br />
-					(3) Có đảm bảo khuyến cáo tất cả hành khách đeo khẩu trang khi lên xe; (4) Có thực hiện khử trùng xe
-					<br />
-					(5) Tài xế và nhân viên đã được tiêm vắc xin
-				</div>
-			),
-		},
-		{
-			title: (
-				<div className="img-name flex items-center">
-					<img src="https://static.vexere.com/production/utilities/1609837962216.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
-					<div className="name">Khử trùng xe</div>
-				</div>
-			),
-			description: <div className="description">Nhà xe có thực hiện phun khử trùng Nano Bạc lên xe nhằm bảo vệ an toàn cho hành khách mùa Covid</div>,
-		},
-		{
-			title: (
-				<div className="img-name flex items-center">
-					<img src="https://static.vexere.com/production/utilities/1609837921462.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
-					<div className="name">Nước rửa tay</div>
-				</div>
-			),
-			description: <div className="description">Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe và trong xe</div>,
-		},
-		{
-			title: (
-				<div className="img-name flex items-center">
-					<img src="https://static.vexere.com/production/utilities/1609837906714.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
-					<div className="name">Đo thân nhiệt</div>
-				</div>
-			),
-			description: <div className="description">Hành khách sẽ được đo thân nhiệt trước khi lên xe để xác định không nghi nhiễm/ lan truyền vi rút Covid cho hành khách khác.</div>,
-		},
+		// {
+		// 	title: (
+		// 		<div className="img-name flex items-center">
+		// 			<img src="https://static.vexere.com/production/utilities/1610093076560.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
+		// 			<div className="name">An toàn mùa covid</div>
+		// 		</div>
+		// 	),
+		// 	description: (
+		// 		<div className="description">
+		// 			Là chương trình bảo vệ an toàn cho hành khách sử dụng dịch vụ của VeXeRe trong mùa dịch Covid. VeXeRe đồng hành các nhà xe đối tác triển khai biện pháp bảo vệ an toàn cho hành khách, như sau: (1) Kiểm tra thân nhiệt hành khách trước khi lên xe
+		// 			<br />
+		// 			(2) Trang bị nước rửa tay;
+		// 			<br />
+		// 			(3) Có đảm bảo khuyến cáo tất cả hành khách đeo khẩu trang khi lên xe; (4) Có thực hiện khử trùng xe
+		// 			<br />
+		// 			(5) Tài xế và nhân viên đã được tiêm vắc xin
+		// 		</div>
+		// 	),
+		// },
+		// {
+		// 	title: (
+		// 		<div className="img-name flex items-center">
+		// 			<img src="https://static.vexere.com/production/utilities/1609837962216.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
+		// 			<div className="name">Khử trùng xe</div>
+		// 		</div>
+		// 	),
+		// 	description: <div className="description">Nhà xe có thực hiện phun khử trùng Nano Bạc lên xe nhằm bảo vệ an toàn cho hành khách mùa Covid</div>,
+		// },
+		// {
+		// 	title: (
+		// 		<div className="img-name flex items-center">
+		// 			<img src="https://static.vexere.com/production/utilities/1609837921462.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
+		// 			<div className="name">Nước rửa tay</div>
+		// 		</div>
+		// 	),
+		// 	description: <div className="description">Nhà xe có trang bị nước rửa tay diệt khuẩn trước khi lên xe và trong xe</div>,
+		// },
+		// {
+		// 	title: (
+		// 		<div className="img-name flex items-center">
+		// 			<img src="https://static.vexere.com/production/utilities/1609837906714.png" alt="Khử trùng xe" width={32} height={32} className="mr-2" />
+		// 			<div className="name">Đo thân nhiệt</div>
+		// 		</div>
+		// 	),
+		// 	description: <div className="description">Hành khách sẽ được đo thân nhiệt trước khi lên xe để xác định không nghi nhiễm/ lan truyền vi rút Covid cho hành khách khác.</div>,
+		// },
 	];
 	const settings = {
 		dots: true,

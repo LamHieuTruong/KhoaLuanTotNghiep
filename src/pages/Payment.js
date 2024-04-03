@@ -45,8 +45,10 @@ export default function Payment(props) {
 				<div className="header-body">
 					<div className="grid grid-cols-1">
 						<div className="logo">
-							<img src="https://storage.googleapis.com/fe-production/icon_vxr_full.svg" alt="logo" />
-						</div>
+  <a href="http://localhost:3000/ticketmgt">
+    <img src="https://storage.googleapis.com/fe-production/icon_vxr_full.svg" alt="logo" />
+  </a>
+</div>
 					</div>
 				</div>
 			</div>
